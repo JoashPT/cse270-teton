@@ -34,7 +34,7 @@ class TestSmokeTest():
   def test_homePage(self):
     self.driver.get("http://127.0.0.1:5500/teton/1.6/index.html")
     wait = WebDriverWait(self.driver, 10)  # 10 seconds timeout
-    elements = wait.until(EC.presence_of_all_elements_located((By.LINK_TEXT, "Home")))
+    elements = wait.until(EC.visibility_of_all_elements_located((By.LINK_TEXT, "Home")))
     assert self.driver.find_element(By.LINK_TEXT, "Home").text == "Home"
     assert self.driver.find_element(By.LINK_TEXT, "Join").text == "Join"
     assert self.driver.find_element(By.LINK_TEXT, "Directory").text == "Directory"
@@ -96,7 +96,7 @@ class TestSmokeTest():
     self.driver.find_element(By.NAME, "biztitle").send_keys("pos")
     self.driver.find_element(By.NAME, "submit").click()
     wait = WebDriverWait(self.driver, 10)  # 10 seconds timeout
-    elements = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, "Email")))
+    elements = wait.until(EC.visibility_of_all_elements_located((By.CSS_SELECTOR, "Email")))
     assert self.driver.find_element(By.CSS_SELECTOR, ".myinput:nth-child(2)").text == "Email"
     elements = self.driver.find_elements(By.NAME, "email")
     assert len(elements) > 0
