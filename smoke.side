@@ -77,63 +77,31 @@
     }, {
       "id": "04857a36-5c92-400e-9cce-29c92ef0551d",
       "comment": "",
-      "command": "verifyElementPresent",
+      "command": "waitForElementPresent",
       "target": "linkText=Home",
-      "targets": [
-        ["linkText=Home", "linkText"],
-        ["css=.active", "css:finder"],
-        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
-        ["xpath=//div[@id='content']/header/nav/ul/li/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'index.html')])[2]", "xpath:href"],
-        ["xpath=//li/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
-      ],
-      "value": ""
+      "targets": [],
+      "value": "30000"
     }, {
       "id": "5e901968-981a-4521-ab06-0c9165036903",
       "comment": "",
-      "command": "verifyElementPresent",
+      "command": "waitForElementPresent",
       "target": "linkText=Join",
-      "targets": [
-        ["linkText=Join", "linkText"],
-        ["css=li:nth-child(2) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Join')]", "xpath:link"],
-        ["xpath=//div[@id='content']/header/nav/ul/li[2]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'join.html')]", "xpath:href"],
-        ["xpath=//li[2]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Join')]", "xpath:innerText"]
-      ],
-      "value": ""
+      "targets": [],
+      "value": "30000"
     }, {
       "id": "b7e6d53b-30a4-40e0-b889-e7283f729668",
       "comment": "",
-      "command": "verifyElementPresent",
+      "command": "waitForElementPresent",
       "target": "linkText=Directory",
-      "targets": [
-        ["linkText=Directory", "linkText"],
-        ["css=li:nth-child(3) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Directory')]", "xpath:link"],
-        ["xpath=//div[@id='content']/header/nav/ul/li[3]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'directory.html')]", "xpath:href"],
-        ["xpath=//li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Directory')]", "xpath:innerText"]
-      ],
-      "value": ""
+      "targets": [],
+      "value": "30000"
     }, {
       "id": "54ae958f-7a07-4bdd-b558-59503341c42a",
       "comment": "",
-      "command": "verifyElementPresent",
+      "command": "waitForElementPresent",
       "target": "linkText=Admin",
-      "targets": [
-        ["linkText=Admin", "linkText"],
-        ["css=li:nth-child(4) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Admin')]", "xpath:link"],
-        ["xpath=//div[@id='content']/header/nav/ul/li[4]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'admin.html')]", "xpath:href"],
-        ["xpath=//li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Admin')]", "xpath:innerText"]
-      ],
-      "value": ""
+      "targets": [],
+      "value": "30000"
     }, {
       "id": "599acaa1-5e7d-429c-9fba-1f1c5ecf0fa8",
       "comment": "",
