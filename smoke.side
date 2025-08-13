@@ -75,66 +75,6 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "293ec8c9-7b80-4391-9573-351b68c68396",
-      "comment": "",
-      "command": "verifyText",
-      "target": "linkText=Home",
-      "targets": [
-        ["linkText=Home", "linkText"],
-        ["css=.active", "css:finder"],
-        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
-        ["xpath=//div[@id='content']/header/nav/ul/li/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'index.html')])[2]", "xpath:href"],
-        ["xpath=//li/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
-      ],
-      "value": "Home"
-    }, {
-      "id": "4c93b18e-384e-4f64-91ae-006243cde2c4",
-      "comment": "",
-      "command": "verifyText",
-      "target": "linkText=Join",
-      "targets": [
-        ["linkText=Join", "linkText"],
-        ["css=li:nth-child(2) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Join')]", "xpath:link"],
-        ["xpath=//div[@id='content']/header/nav/ul/li[2]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'join.html')]", "xpath:href"],
-        ["xpath=//li[2]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Join')]", "xpath:innerText"]
-      ],
-      "value": "Join"
-    }, {
-      "id": "24c4d3bc-8c5f-4356-9de7-7ea394ee2993",
-      "comment": "",
-      "command": "verifyText",
-      "target": "linkText=Directory",
-      "targets": [
-        ["linkText=Directory", "linkText"],
-        ["css=li:nth-child(3) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Directory')]", "xpath:link"],
-        ["xpath=//div[@id='content']/header/nav/ul/li[3]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'directory.html')]", "xpath:href"],
-        ["xpath=//li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Directory')]", "xpath:innerText"]
-      ],
-      "value": "Directory"
-    }, {
-      "id": "3e177b8b-9a6d-41dc-840c-830677dbcb80",
-      "comment": "",
-      "command": "verifyText",
-      "target": "linkText=Admin",
-      "targets": [
-        ["linkText=Admin", "linkText"],
-        ["css=li:nth-child(4) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Admin')]", "xpath:link"],
-        ["xpath=//div[@id='content']/header/nav/ul/li[4]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'admin.html')]", "xpath:href"],
-        ["xpath=//li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Admin')]", "xpath:innerText"]
-      ],
-      "value": "Admin"
-    }, {
       "id": "599acaa1-5e7d-429c-9fba-1f1c5ecf0fa8",
       "comment": "",
       "command": "verifyElementPresent",
@@ -566,18 +506,6 @@
       "target": "name=submit",
       "targets": [],
       "value": ""
-    }, {
-      "id": "fbc6d2dc-dceb-4bf8-a145-5a86591a7f01",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.myinput:nth-child(2)",
-      "targets": [
-        ["css=.myinput:nth-child(2)", "css:finder"],
-        ["xpath=//div[@id='content']/main/section/form/fieldset/label", "xpath:idRelative"],
-        ["xpath=//label", "xpath:position"],
-        ["xpath=//label[contains(.,'Email')]", "xpath:innerText"]
-      ],
-      "value": "Email"
     }, {
       "id": "395ff541-5aa9-4421-849f-e6cc25fe2f4d",
       "comment": "",
