@@ -32,10 +32,10 @@ class TestSmokeTest():
   
   def test_homePage(self):
     self.driver.get("http://127.0.0.1:5500/teton/1.6/index.html")
-    WebDriverWait(self.driver, 30).until(expected_conditions.presence_of_element_located((By.LINK_TEXT, "Home")))
-    WebDriverWait(self.driver, 30).until(expected_conditions.presence_of_element_located((By.LINK_TEXT, "Join")))
-    WebDriverWait(self.driver, 30).until(expected_conditions.presence_of_element_located((By.LINK_TEXT, "Directory")))
-    WebDriverWait(self.driver, 30).until(expected_conditions.presence_of_element_located((By.LINK_TEXT, "Admin")))
+    assert self.driver.find_element(By.LINK_TEXT, "Home").text == "Home"
+    assert self.driver.find_element(By.LINK_TEXT, "Join").text == "Join"
+    assert self.driver.find_element(By.LINK_TEXT, "Directory").text == "Directory"
+    assert self.driver.find_element(By.LINK_TEXT, "Admin").text == "Admin"
     elements = self.driver.find_elements(By.CSS_SELECTOR, ".spotlight1 > .centered-image")
     assert len(elements) > 0
     assert self.driver.find_element(By.CSS_SELECTOR, ".spotlight1 > h4").text == "Teton Elementary"

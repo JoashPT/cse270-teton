@@ -2,7 +2,7 @@
   "id": "103a9311-013e-42e2-9d26-9990baf66ebb",
   "version": "2.0",
   "name": "smoke",
-  "url": "http://127.0.0.1:5500/teton/1.6/admin.html",
+  "url": "http://127.0.0.1:5500/teton/1.6/index.html",
   "tests": [{
     "id": "c206ddd7-e05f-43a2-97d8-cdc69c6476f1",
     "name": "Logo Header and Title",
@@ -75,33 +75,65 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "04857a36-5c92-400e-9cce-29c92ef0551d",
+      "id": "293ec8c9-7b80-4391-9573-351b68c68396",
       "comment": "",
-      "command": "waitForElementPresent",
+      "command": "verifyText",
       "target": "linkText=Home",
-      "targets": [],
-      "value": "30000"
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//div[@id='content']/header/nav/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'index.html')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": "Home"
     }, {
-      "id": "5e901968-981a-4521-ab06-0c9165036903",
+      "id": "4c93b18e-384e-4f64-91ae-006243cde2c4",
       "comment": "",
-      "command": "waitForElementPresent",
+      "command": "verifyText",
       "target": "linkText=Join",
-      "targets": [],
-      "value": "30000"
+      "targets": [
+        ["linkText=Join", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Join')]", "xpath:link"],
+        ["xpath=//div[@id='content']/header/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'join.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Join')]", "xpath:innerText"]
+      ],
+      "value": "Join"
     }, {
-      "id": "b7e6d53b-30a4-40e0-b889-e7283f729668",
+      "id": "24c4d3bc-8c5f-4356-9de7-7ea394ee2993",
       "comment": "",
-      "command": "waitForElementPresent",
+      "command": "verifyText",
       "target": "linkText=Directory",
-      "targets": [],
-      "value": "30000"
+      "targets": [
+        ["linkText=Directory", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Directory')]", "xpath:link"],
+        ["xpath=//div[@id='content']/header/nav/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'directory.html')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Directory')]", "xpath:innerText"]
+      ],
+      "value": "Directory"
     }, {
-      "id": "54ae958f-7a07-4bdd-b558-59503341c42a",
+      "id": "3e177b8b-9a6d-41dc-840c-830677dbcb80",
       "comment": "",
-      "command": "waitForElementPresent",
+      "command": "verifyText",
       "target": "linkText=Admin",
-      "targets": [],
-      "value": "30000"
+      "targets": [
+        ["linkText=Admin", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Admin')]", "xpath:link"],
+        ["xpath=//div[@id='content']/header/nav/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'admin.html')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Admin')]", "xpath:innerText"]
+      ],
+      "value": "Admin"
     }, {
       "id": "599acaa1-5e7d-429c-9fba-1f1c5ecf0fa8",
       "comment": "",
